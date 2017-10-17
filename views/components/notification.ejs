@@ -1,0 +1,18 @@
+<div class="ui grid">
+    <div class="four wide column"></div>
+    <div class="eight wide column">
+  
+   <% if (success) { %>  <!-- 是index.js里面    res.locals.success = req.flash('success').toString();中的success变量。 -->
+      <div class="ui success message">
+        <p><%= success %></p>
+      </div>
+    <% } %>
+  
+    <% if (error) { %>
+      <div class="ui error message">
+        <p><%= error %></p>
+      </div>
+    <% } %>
+  
+    </div>
+  </div>
